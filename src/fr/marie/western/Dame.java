@@ -1,6 +1,6 @@
 package fr.marie.western;
 
-public class Dame extends Humain{
+public class Dame extends Humain implements VisagePale{
     private String couleurRobe;
     private boolean estLibre;
 
@@ -48,5 +48,11 @@ public class Dame extends Humain{
      void ChangerRobe(String couleur){
         this.couleurRobe =  couleur;
         parler(" Regardez ma nouvelle robe "+ couleur + " !");
+    }
+
+    @Override
+    public void scalp(Indien indien) {
+        indien.nombreDePlumes += 1;
+        parler("Aïe ma tête !");
     }
 }

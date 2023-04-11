@@ -22,8 +22,9 @@ public class Histoire {
         alice.libérer(jo);
         alice.ChangerRobe("bleu");
         alice.sePresenter();
-
-
+        Indien bryan = new Indien ("bryan");
+         alice.scalp(bryan);
+         bryan.sePresenter();
         CalamityJane.capture(alice);
         CalamityJane.sePresenter();
         alice.sePresenter();

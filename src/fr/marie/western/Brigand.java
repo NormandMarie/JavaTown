@@ -1,6 +1,6 @@
 package fr.marie.western;
 
-public class Brigand extends Humain  implements HorsLaLoi {
+public class Brigand extends Humain  implements HorsLaLoi,VisagePale {
 
     String look;
     int nbrDame;
@@ -62,5 +62,11 @@ public class Brigand extends Humain  implements HorsLaLoi {
     @Override
     public void SetRecompense(double nouvelleRecompense) {
         this.récompense = nouvelleRecompense;
+    }
+
+    @Override
+    public void scalp(Indien indien) {
+        indien.nombreDePlumes += 1;
+        parler("Aïe ma tête !");
     }
 }

@@ -1,6 +1,6 @@
 package fr.marie.western;
 
-public class Cowboy extends Humain{
+public class Cowboy extends Humain implements VisagePale{
     int popularité;
     String adjectif;
     public Cowboy(String nom) {
@@ -24,5 +24,10 @@ public class Cowboy extends Humain{
     }
 
 
+    @Override
+    public void scalp(Indien indien) {
+        indien.nombreDePlumes += 1;
+        parler("Aïe ma tête !");
+    }
 }
 

@@ -10,6 +10,13 @@ public Indien(String nom){
 }
     @Override
     public void parler(String texte) {
-        System.out.println(super.quelEstTonNom() + " - " + texte + "Ugh !");
+        System.out.println(super.quelEstTonNom() + " - " + texte + " Ugh !");
+
     }
+
+    @Override
+    public void sePresenter() {
+        parler("Je suis " + this.quelEstTonNom() + " j'ai " + this.nombreDePlumes + " plumes");
+    }
+
 }

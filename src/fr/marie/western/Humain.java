@@ -1,6 +1,6 @@
 package fr.marie.western;
 
-public class Humain {
+public abstract class Humain {
    private String nom;
 
     private String BoissonFav;
@@ -35,4 +35,5 @@ public class Humain {
     public void boire() {
         parler("Ah ! un bon verre de " + BoissonFav + " ! GLOUPS !");
     }
+
 }
